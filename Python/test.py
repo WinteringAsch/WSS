@@ -1,17 +1,15 @@
-line = 'YeahIlikeMusicandTekken7'
-print(len(line))
 
-n = len(line)
-r = int(n/10)
-l = n%10
-p = 0
-for i in range(0,r+1):
-    if i == r:
-        for j in range(0, l):
-            print(line[p], end = '')
-            p += 1
-    else:
-        for j in range(0, 10):
-            print(line[p], end = '')
-            p += 1
-    print()
+#3n(n-1)+1
+x = 9
+k = 1
+while x > (k*(k+1)/2):
+    k += 1
+k -= 1
+x = x - (k*(k+1)/2)
+if k % 2 == 0:
+    a = str(int(k-x+2))
+    b = str(int(x))
+else:
+    a=str(int(int(x)))
+    b=str(int(int(k-x+2)))
+print(a+'/'+b)
